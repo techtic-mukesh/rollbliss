@@ -1,0 +1,130 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "custom_css": [
+        ".collection-hero {height: auto;}"
+      ],
+      "settings": {
+        "enable": true,
+        "collection_image_enable": false,
+        "parallax": false
+      }
+    },
+    "390d493e-2227-4355-bc53-579371d6f0ca": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "{{ collection.image }}",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "{{ collection.title }}",
+        "text": "<p>Welcome to RollBliss, where luxury meets functionality for the ultimate grappling experience. Our premium-quality custom BJJ Gis, rashguards, and shorts are designed with the utmost attention to detail, ensuring you not only look good but also feel good on the mat.<\/p>",
+        "button_label": "View Products",
+        "button_link": "#CollectionAjaxContent",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "slideshow_wMY3QQ": {
+      "type": "slideshow",
+      "blocks": {
+        "image_fURpPH": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "{{ collection.title }}",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "{{ collection.image }}",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "image_47rNCq": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_fURpPH",
+        "image_47rNCq"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 3,
+            "rows_per_page": 9,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": false,
+        "filter_style": "sidebar",
+        "enable_color_swatches": true,
+        "enable_sort": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "390d493e-2227-4355-bc53-579371d6f0ca",
+    "slideshow_wMY3QQ",
+    "main-collection"
+  ]
+}

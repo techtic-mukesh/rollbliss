@@ -1,0 +1,158 @@
+{{ 'application.css' | asset_url | stylesheet_tag: preload: true }}
+
+
+
+<div class="custom-form-section">
+    <div class="container">
+    <h2>Ready to begin designing your Custom Jiu Jitsu GIS, Rashguards, Grappling Shorts and more?</h2>
+    <p>To get started, simply fill out our custom fightwear form and one of our team members will be in touch with you to discuss your design options.</p>        
+            {% form 'contact' %}
+            {{ form.errors | default_errors }}
+             {%- if form.posted_successfully? -%}
+    <span style="color:green;display: flex;justify-content: center">Thanks for contacting us. we'll get back to you as soon as possible.</span>
+  {%- endif -%}
+<br>
+
+                <div class="d-flex">
+                    <div class="left-col">
+                        <div class="field-row">
+                            <label>Full Name *</label>
+                            <input type="text" name="contact[Full Name]" required="" />
+                        </div>
+                        <div class="field-row">
+                            <label>Email Address *</label>
+                            <input type="email" name="contact[email]" required="" />
+                        </div>
+                        <div class="field-row">
+                            <label>Business Address *</label>
+                            <input type="text" name="contact[Business Address]" placeholder="(Used for Shipping)" required="" />
+                        </div>
+                        <div class="field-row">
+                            <label>Business Instagram Handle</label>
+                            <input type="text" name="contact[Business Instagram Handle]" />
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <div class="field-row">
+                            <label>Business Name *</label>
+                            <input type="text" name="contact[Business Name]" required="" />
+                        </div>
+                        <div class="field-row">
+                            <label>Phone *</label>
+                            <input type="tel" name="contact[Phone]" required="" />
+                        </div>
+                        <div class="field-row">
+                            <label>Business Website URL</label>
+                            <input type="text" name="contact[Business Website URL]" />
+                        </div>
+                        <div class="field-row">
+                            <label>What is your role at the gym? *</label>
+                            <input type="text" name="contact[What is your role at the gym?]" required="" placeholder="(Owner, Manager, Etc)" />
+                        </div>
+                    </div>
+                </div>
+                <div class="full-col">
+                    <div class="field-row">
+                        <label>Approximately, how many students do you have?</label>
+                        <input type="text" name="contact[Approximately, how many students do you have?]" />
+                    </div>
+                    <div class="field-row">
+                        <label>MINIMUMS: Depending on your order, we have minimums starting at 20 pcs. We are unable to go below this amount. *
+                        </label>
+                        <div class="d-flex align-items-center">
+                            <span class="item">
+                                <input type="checkbox" name="contact[MINIMUMS: Depending on your order, we have minimums starting at 20 pcs. We are unable to go below this amount.]" value="I Understand and agree"> I Understand and agree
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field-row">
+                        <label>Which items are you interested in?</label>
+                        <div class="d-flex flex-direction-column items-interested">
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="BJJ GIS"> BJJ GIS
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="BJJ Belts"> BJJ Belts
+                            </span>                          
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="Rash Guard"> Rash Guard
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="Grappling Shorts"> Grappling Shorts
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="Spats"> Spats 
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="Women's Leggings"> Women's Leggings 
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="Vale Tudo Shorts"> Vale Tudo Shorts
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="Wrestling Singlets"> Wrestling Singlets
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="Hoodies"> Hoodies
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="Joggers"> Joggers
+                            </span>
+                        </div>
+                    </div>
+                    <div class="field-row">
+                        <label>Do you need design service?</label>
+                        <div class="d-flex flex-direction-column items-interested">
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="Yes"> Yes
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[interested]" value="No ( I have a design ready to print )"> No ( I have a design ready to print )
+                            </span>                            
+                        </div>
+                    </div>
+                    <div class="field-row">
+                        <label>Please provide a description of the items you are interested in producing? *</label>
+                        <textarea placeholder="ie. long or short sleeve, youth or adult size, style of grappling shorts etc." maxlength="5000" name="contact[Please provide a description of the items you are interested in producing?]" required=""></textarea>
+                    </div>
+                    <div class="field-row">
+                        <label>Please provide a description of your design idea as well as placements *</label>
+                        <textarea placeholder="Graphic in front and back, design on sleeves" maxlength="5000" name="contact[Please provide a description of your design idea as well as placements]" required=""></textarea>
+                    </div>
+                    <div class="field-row">
+                        <label>When would you like to begin your custom project?</label>
+                        <textarea maxlength="5000" name="contact[When would you like to begin your custom project?]"></textarea>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit" />
+                </div>
+      <br>
+      <span>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply</span>
+            {% endform %}
+            
+    </div>
+</div>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "custom-form",
+    "settings": [],
+    "presets":[
+      {
+        "name":"custom-form",
+        "category":"custom"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,39 @@
+{
+  "parent": "page.the-royals.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "df43cefb-ceaa-4229-9cb8-73f66edb59f6": {
+      "settings": {},
+      "blocks": {
+        "template--16061850353823__df43cefb-ceaa-4229-9cb8-73f66edb59f6-16775077992538bd72-0": {
+          "settings": {
+            "image_mobile": "shopify:\/\/shop_images\/Nov17202310-32PM25.jpg"
+          }
+        }
+      }
+    },
+    "7dc52fd6-38f9-4637-bc7a-9d6843e0ee44": {
+      "settings": {},
+      "blocks": {
+        "template--16057945587871__7dc52fd6-38f9-4637-bc7a-9d6843e0ee44-1676973307b40250a4-0": {
+          "settings": {
+            "height": 640,
+            "image": "shopify:\/\/shop_images\/Nov17202310-31PM13.jpg"
+          }
+        }
+      }
+    },
+    "a5673328-2291-4969-814c-45d80205eff3": {
+      "settings": {},
+      "blocks": {
+        "template--16057945587871__a5673328-2291-4969-814c-45d80205eff3-16769730796e85c9e3-0": {
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-8.png"
+          }
+        }
+      }
+    }
+  }
+}

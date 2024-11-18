@@ -1,0 +1,54 @@
+<script>
+  /*
+  Javascript count down timer
+  data format: 2021-10-7 18:00:00
+  */
+  (function () {
+
+    function convertDateForIos(date) {
+      var arr = date.split(/[- :]/);
+      date = new Date(arr[0], arr[1]-1, arr[2], arr[3], arr[4], arr[5]).getTime();
+      return date;
+    }
+    const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+    // get all timer placeholder by class
+    const timers = document.querySelectorAll('.CountdownTimer');
+
+    let endDay = "2022-08-29 18:00:00",
+    countDown = convertDateForIos(endDay);
+    let x = '';
+    let timerHtml = '';
+      x = setInterval(function ins1() {
+      // lock time zone
+      let c = new Date().toLocaleString('en-US', { timeZone: 'Europe/London' });
+      let sensibleFormat = new Date(c);
+
+      let now = sensibleFormat.getTime(),
+          distance = countDown - now;
+      let dayText =  Math.floor(distance / (day));
+      let hoursText =  Math.floor((distance % (day)) / (hour));
+      let minutesText =  Math.floor((distance % (hour)) / (minute));
+      let secondText = Math.floor((distance % (minute)) / second);
+      if(dayText){
+        timerHtml = '<b>'+dayText+'</b>d <b>'+hoursText+'</b>h <b>'+minutesText+'</b>m <b>'+secondText.toString().padStart(2, '0')+'</b>s';
+      }else{
+        timerHtml =  '<b>'+hoursText+'h '+minutesText+'m '+secondText+'s</b>';
+      }
+      timers.forEach(function(element){
+        element.innerHTML = timerHtml;
+      });
+      //do something later when date is reached
+      if (distance < 0) {
+        clearInterval(x);
+      }
+      return ins1;
+      //seconds
+    }(), 1000);
+  }());
+
+</script>
+
+

@@ -1,0 +1,218 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "About Us"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Founded in 2015, RollBliss pioneered the concept of fully custom, one-of-a-kind jiu-jitsu gis, delivering unparalleled craftsmanship to enthusiasts around the globe. Under the visionary leadership of co-founder and lead designer, Saleha, our brand has expanded beyond bespoke creations to include an exquisite range of high-fashion jiu-jitsu apparel and accessories available through our exclusive online boutique.<\/p>"
+          }
+        },
+        "text_x8mtDb": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>At RollBliss, we redefine the art of jiu-jitsu wear.<\/p><p>Our collections are a testament to creativity and innovation, featuring unique designs and artistic flourishes that are incomparable and found<br\/>nowhere else. We transcend traditional color palettes, introducing a spectrum of custom shades that transform our gis into stunning pieces of wearable art. Our use of specialty threads and 3D embroidery ensures each piece stands out, embodying both beauty and strength.<\/p>"
+          }
+        },
+        "text_DHYMB8": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Our commitment to quality is unwavering. We meticulously test and research to source the finest materials available to us,<br\/>ensuring our gis and rash guards not only endure but also provide ultimate comfort and performance on the mat. This dedication to excellence ensures that our apparel supports your best performance for years to come.<br\/><br\/>Looking to the future, RollBliss is pushing the boundaries of traditional apparel manufacturing. We are developing a line of handcrafted gis made from fabric woven on traditional Indian handlooms, which operate without electricity. This initiative reflects our commitment to strength, luxury, and sustainability, promising what we believe will be the most durable and luxuriously comfortable gis in the world.<\/p>"
+          }
+        },
+        "heading_eR3Bzr": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_NTHmJ7": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>Mission Statement<\/strong><br\/><br\/>Our mission at RollBliss is to fortify your jiu-jitsu journey with apparel that embodies resilience, comfort, and bold style. By crafting gear that boosts your performance on the mats, we help pave the way for you to emerge as the finest version of yourself beyond them.<\/p>"
+          }
+        },
+        "heading_3ybmDY": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_hQaiah": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>Our Values at RollBliss<\/strong><br\/><br\/>• <strong>Quality Over Quantity<\/strong> - We believe in a meticulous approach to craftsmanship, where every detail is a testament to our commitment to quality. Our products are not mass-produced, they are artfully constructed to meet the highest standards of excellence.<br\/><br\/>•<strong> Authenticity <\/strong>- We champion individuality. RollBliss stands for the authenticity of self-expression. Our designs are a canvas for your uniqueness, celebrating the originality that makes you unparalleled both on and off the mat.<br\/><br\/>•<strong> Hard Work<\/strong> - We respect the grind and honor the sweat. Our ethos is shaped by the belief that the most rewarding achievements are those that are earned. The <strong>\"Built Not Bought\"<\/strong> philosophy runs deep in our veins, mirroring the dedication of the athletes we serve.<\/p>"
+          }
+        },
+        "text_6izj4n": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>RollBliss is more than a brand; we are a beacon of perseverance, celebrating the journey of those who work tirelessly to become the best versions of themselves.<\/strong><\/p>"
+          }
+        },
+        "heading_NJaVHE": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_MXTP9R": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><a href=\"\/pages\/reviews\" target=\"_blank\" title=\"Reviews\">Check out our <strong>Reviews<\/strong><\/a> from some of the world’s best athletes and premier coaches.<\/p>"
+          }
+        },
+        "heading_gwtEAm": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "heading_BqPrLB": {
+          "type": "heading",
+          "settings": {
+            "title": "Best Sellers"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "text_x8mtDb",
+        "text_DHYMB8",
+        "heading_eR3Bzr",
+        "text_NTHmJ7",
+        "heading_3ybmDY",
+        "text_hQaiah",
+        "text_6izj4n",
+        "heading_NJaVHE",
+        "text_MXTP9R",
+        "heading_gwtEAm",
+        "heading_BqPrLB"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "text-columns": {
+      "type": "text-columns",
+      "blocks": {
+        "column1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/27.png",
+            "image_width": 650,
+            "title": "Black Resort BJJ Gi",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/black-resort-bjj-gi-by-rollbliss"
+          }
+        },
+        "column2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/36_d650d3c8-06e5-4add-811a-f33fb431375d.png",
+            "image_width": 650,
+            "title": "White Geisha BJJ Gi",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/geisha-bjj-gi"
+          }
+        },
+        "column3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/08_9e33f7aa-ace5-4ad6-ac26-f0b0e418f634.png",
+            "image_width": 650,
+            "title": "Black Orchid BJJ Gi",
+            "text": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/black-orchid-bjj-gi-by-rollbliss"
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    },
+    "map": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "map_title": "Our retail store",
+        "address": "<p>301 Front St W<br\/>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
+        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
+        "api_key": "",
+        "show_button": true,
+        "background_image_position": "center center"
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "blog_posts_pXrzrd": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "news",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text",
+    "text-columns",
+    "map",
+    "featured-collection",
+    "blog_posts_pXrzrd"
+  ]
+}

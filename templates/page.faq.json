@@ -1,0 +1,160 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "faq-1": {
+          "type": "question",
+          "settings": {
+            "title": "WHAT IS THE COST OF A 100% CUSTOM GI?",
+            "text": "<p>Most fully custom gi's run between $250 and $350, depending on the design details.<\/p>"
+          }
+        },
+        "faq-4": {
+          "type": "question",
+          "settings": {
+            "title": "WHAT IF I'M NOT SURE WHAT I WANT AS FAR AS A CUSTOM GI OR NOGI GEAR, BUT I KNOW I WANT SOMETHING SPECIAL?",
+            "text": "<p>Some people know exactly what they want. Many have a symbol or image that kick starts the design process. Others just know they want to stand out with an amazing, well-fitted custom kimono or nogi gear. We'll work with you to transform your idea into a reality, sending proofs for your approval before going in to production.<\/p>"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "title": "HOW LONG WILL IT TAKE TO GET MY CUSTOM GI IN THE MAIL?",
+            "text": "<p>Custom Orders can take delivery time of 4 - 6 weeks after design specs are finalized. Please allow appropriate time if ordering for a competition. Orders that are purchased on our online store can take up to 3 to 8 business days to get processed and delivered.<\/p>"
+          }
+        },
+        "65971d9b-93b0-41f5-a175-9576ce4e54b4": {
+          "type": "question",
+          "settings": {
+            "title": "DO YOU SELL WHOLESALE BJJ GIS?",
+            "text": "<p>Yes, we do, but only to a limited number of accounts. To inquire about wholesale orders please fill this <a href=\"https:\/\/rollbliss.com\/pages\/wholesale-orders\" target=\"_blank\" title=\"https:\/\/rollbliss.com\/pages\/wholesale-orders\">form<\/a><\/p>"
+          }
+        },
+        "0ceb3a7a-24ff-4647-ba12-e0d330e53495": {
+          "type": "question",
+          "settings": {
+            "title": "WHAT GIS DO YOU HAVE IN STOCK?",
+            "text": "<p>The shopping cart shows the gi quantities that are currently available.<\/p>"
+          }
+        },
+        "b4a5d0c1-fd09-4698-a6e9-d7e6bffdb5fa": {
+          "type": "question",
+          "settings": {
+            "title": "WHEN WILL MY ORDER ARRIVE?",
+            "text": "<p>All orders are processed with in 3-5 business days and shipped from our location in Kyle, Texas. Free Shipping: Orders over $150 that choose the Free Shipping option will arrive in approximately 5-8 business days after the order has been processed and shipped.<\/p><p>These services do not generally operate on weekends. Any orders that are shipped close to the weekend may end up being delivered the week after. Some processing time may apply. For the most part, orders will be shipped within1-3 business days from the date the order is placed.<\/p>"
+          }
+        },
+        "79206310-304a-46de-9609-58bc2739f3bb": {
+          "type": "question",
+          "settings": {
+            "title": "HOW CAN I TRACK MY ORDER?",
+            "text": "<p>Once your order completes through processing, a tracking number will be emailed to you. you can also check your order tracking <a href=\"https:\/\/rollbliss.com\/apps\/track123\" target=\"_blank\" title=\"https:\/\/rollbliss.com\/apps\/track123\"><strong>here<\/strong><\/a><\/p>"
+          }
+        },
+        "662c4a26-283a-48ba-b9c2-c7133beec89e": {
+          "type": "question",
+          "settings": {
+            "title": "I LIVE OUTSIDE THE USA. CAN I GET FREE SHIPPING?",
+            "text": "<p>At this time Free Shipping is for US orders shipped within the Contiguous United States. Shipping charges apply for orders going to the states of Alaska and Hawaii, and all off-shore U.S. territories such as Puerto Rico. Same for Returns.<\/p>"
+          }
+        },
+        "caa57b51-7d46-4e14-ae2b-104be36dc287": {
+          "type": "question",
+          "settings": {
+            "title": "WHERE CAN I FIND THE SIZING CHART?",
+            "text": "<p>Our size chart for all products is located on the item page. Simply scroll down the page and you will find a “Size Chart”. Keep in mind that all of our gis are 100% pre-shrunk (However additional shrinking is always possible if care\/cleaning instructions are not followed.) If you are unsure of your size, you can send us an email with your height and weight so we can advise you what size to get. Sizing chart click <a href=\"https:\/\/rollbliss.com\/pages\/size-chart\" target=\"_blank\" title=\"https:\/\/rollbliss.com\/pages\/size-chart\"><strong>here<\/strong><\/a><\/p>"
+          }
+        },
+        "53846353-1124-4e5a-b083-4242816da7f6": {
+          "type": "question",
+          "settings": {
+            "title": "WHAT IS YOUR RETURN POLICY?",
+            "text": "<p>We accept any unused\/unwashed product back for a refund within 30 days of the date of purchase. Shipping costs are not refunded for any reason. Customer pays for return shipping. Return Policy click <a href=\"https:\/\/rollbliss.com\/pages\/return-policy\" target=\"_blank\" title=\"https:\/\/rollbliss.com\/pages\/return-policy\"><strong>here<\/strong><\/a><\/p>"
+          }
+        },
+        "747e0b2d-2582-4010-88a1-188df8c96ccb": {
+          "type": "question",
+          "settings": {
+            "title": "WHICH CREDIT CARDS DOES ROLLBLISS.COM ACCEPT?",
+            "text": "<p>Visa, Mastercard, AMEX and Discover cards are accepted, as well as debit cards which bear the Visa or Mastercard logo. When you receive your credit card bill, this sale will appear as the business name RollBliss Kimonos.<\/p>"
+          }
+        },
+        "29b5b18a-3f9b-4d63-bc50-4222cfd0b1ae": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I HAVE AN ORDER SHIPPED TO MY P.O. BOX?",
+            "text": "<p>Yes, We use USPS Priority Mail for P.O.Box orders.<\/p>"
+          }
+        },
+        "01d3ae28-a65a-4c94-993d-abe7b0ac4585": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I SHIP MY ORDER TO A DIFFERENT ADDRESS?",
+            "text": "<p>Yes! When you place your order and come to the check out screen, just replace your address with the address you want to ship your merchandise to, then continue (note: Your credit card billing address must be a verified address and match the one on file with your credit card company.)<\/p>"
+          }
+        },
+        "78624ddb-d67f-4d96-b58e-213298b59c58": {
+          "type": "question",
+          "settings": {
+            "title": "CAN I CANCEL MY ORDER?",
+            "text": "<p>Customized Gear: Yes, you can, as long as the item has not been put in production. All sales are final because these are customized items.<\/p><p>Order placed on our website can  be cancelled immediately if they are not shipped. Once they are shipped you can not cancel the order. Once you receive the product you can  return them back to us and we will process the refund.<\/p>"
+          }
+        },
+        "ebc24119-9407-4fd0-8fcd-e7a349c2bb68": {
+          "type": "question",
+          "settings": {
+            "title": "I CANCELED MY ORDER BUT I HAVEN’T RECEIVED A CREDIT YET. HOW LONG DO CREDITS TAKE?",
+            "text": "<p>We submit all requests for credits within 1 business day of receipt; however, it may take 10-15 business days for you to receive your credit. You should see this on your next credit card statement or the following one, depending on where you are in your billing cycle.<\/p>"
+          }
+        },
+        "9e4ae302-838d-4f57-a1b9-5dee30984e37": {
+          "type": "question",
+          "settings": {
+            "title": "QUESTIONS?",
+            "text": "<p>Contact us via email<br\/>info@rollbliss.com<\/p>"
+          }
+        },
+        "2602f1b5-009a-4cb6-b30b-8c7ce2f597d9": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-1",
+        "faq-4",
+        "faq-2",
+        "65971d9b-93b0-41f5-a175-9576ce4e54b4",
+        "0ceb3a7a-24ff-4647-ba12-e0d330e53495",
+        "b4a5d0c1-fd09-4698-a6e9-d7e6bffdb5fa",
+        "79206310-304a-46de-9609-58bc2739f3bb",
+        "662c4a26-283a-48ba-b9c2-c7133beec89e",
+        "caa57b51-7d46-4e14-ae2b-104be36dc287",
+        "53846353-1124-4e5a-b083-4242816da7f6",
+        "747e0b2d-2582-4010-88a1-188df8c96ccb",
+        "29b5b18a-3f9b-4d63-bc50-4222cfd0b1ae",
+        "01d3ae28-a65a-4c94-993d-abe7b0ac4585",
+        "78624ddb-d67f-4d96-b58e-213298b59c58",
+        "ebc24119-9407-4fd0-8fcd-e7a349c2bb68",
+        "9e4ae302-838d-4f57-a1b9-5dee30984e37",
+        "2602f1b5-009a-4cb6-b30b-8c7ce2f597d9"
+      ],
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq"
+  ]
+}

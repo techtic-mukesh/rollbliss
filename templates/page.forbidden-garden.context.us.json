@@ -1,0 +1,7 @@
+{
+  "parent": "page.forbidden-garden.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {}
+}

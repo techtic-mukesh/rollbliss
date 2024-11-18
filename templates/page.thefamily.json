@@ -1,0 +1,315 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "a5673328-2291-4969-814c-45d80205eff3": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16057945587871__a5673328-2291-4969-814c-45d80205eff3-16769730796e85c9e3-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "ROLLBLISS PRESENTS",
+            "title": "THE <b>FAMILY<\/b>",
+            "title_size": 72,
+            "subheading": "",
+            "link": "shopify:\/\/pages\/sponsorship-1",
+            "link_text": "Get Sponsored",
+            "link_2": "shopify:\/\/pages\/sponsorship-1",
+            "link_text_2": "",
+            "color_accent": "#ffffff",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/banner-12.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--16057945587871__a5673328-2291-4969-814c-45d80205eff3-16769730796e85c9e3-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16057945587871__a5673328-2291-4969-814c-45d80205eff3-16769730796e85c9e3-0",
+        "template--16057945587871__a5673328-2291-4969-814c-45d80205eff3-16769730796e85c9e3-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "dde053ac-f5ca-410c-8b4c-42ad9f3e66a2": {
+      "type": "text-columns",
+      "blocks": {
+        "b2065fec-947e-4482-b763-d14fa1c82bf1": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/11_9bd147c8-ec6f-4870-a712-677e21a4c65d.png",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> DIMA MUROVANNI<\/p><p><strong>RANK:<\/strong> BROWN<\/p><p><strong>SCHOOL:<\/strong> BJJ ACADEMIE\/BTEAM <\/p><p><strong>INSTAGRAM:<\/strong> @DIMA_MUROVANNI<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16058221330591__dde053ac-f5ca-410c-8b4c-42ad9f3e66a2-1677003990e1d06eaa-0": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/31.png",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> FELIPE MACHADO<\/p><p><strong>RANK:<\/strong> BLACK<\/p><p><strong>SCHOOL:<\/strong> PIRAMIDE GRAPPLING<\/p><p><strong>INSTAGRAM:<\/strong> @FELIPEMACHADOJJ<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "0be87fe9-8a7f-40d1-84ae-ec5a0edea4d9": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/img-1.png",
+            "image_width": 460,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> ELI KNIGHT<\/p><p><strong>RANK:<\/strong> 3rd DEGREE BLACK BELT<\/p><p><strong>SCHOOL:<\/strong> KNIGHT JIU JITSU<\/p><p><strong>INSTAGRAM:<\/strong> @KNIGHT_JIU_JITSU<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "2eb6d572-f046-4708-ad3f-423bf92388f0": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Skype_Picture_2024_09_02T18_36_51_343Z.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> SEBASTIAN BROSCHE<\/p><p><strong>RANK:<\/strong> BLACK<\/p><p><strong>SCHOOL:<\/strong> YOGA FOR BJJ<\/p><p><strong>INSTAGRAM:<\/strong> @YOGAFORBJJ<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_bmXCtb": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        },
+        "template--16058221330591__dde053ac-f5ca-410c-8b4c-42ad9f3e66a2-1677003990e1d06eaa-1": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/8H0A3337-Edit.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> SOPHIA CASSELLA<\/p><p><strong>RANK:<\/strong> BROWN<\/p><p><strong>SCHOOL:<\/strong> GARRY TONON BJJ<\/p><p><strong>INSTAGRAM:<\/strong> @SOPHIACASSELLABJJ<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16058221330591__dde053ac-f5ca-410c-8b4c-42ad9f3e66a2-1677003990e1d06eaa-2": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Pfp-12.png",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> SEAN YADIMARCO<\/p><p><strong>RANK:<\/strong> BLACK<\/p><p><strong>SCHOOL:<\/strong> BCJJ<\/p><p><strong>INSTAGRAM:<\/strong> @YADIMARCO<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "3152ec1c-379a-4fe8-aeda-9dbcf6380044": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Pfp-3.png",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> CAMERON MELLOTT<\/p><p><strong>RANK:<\/strong> BLACK<\/p><p><strong>SCHOOL:<\/strong> OCBJJ<\/p><p><strong>INSTAGRAM:<\/strong> @CAMERONMELLOTT<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "0ee91502-49af-441f-b518-05d8ef75b044": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/5_0cf3ec0a-2e45-4772-92b9-12d8ceb33923.jpg",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> BIANCA GIANNINI<\/p><p><strong>RANK:<\/strong> BLACK<\/p><p><strong>SCHOOL:<\/strong> NEW WAVE<\/p><p><strong>INSTAGRAM:<\/strong> @BIANGIANNINI<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "b9c3a98b-c983-4ec7-aacc-4e77f17260a4": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Pfp-7_ace0a312-f35e-4e90-a800-c58fe2d8a336.png",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> SEAN LAYFIELD<\/p><p><strong>RANK:<\/strong> PURPLE<\/p><p><strong>SCHOOL:<\/strong> BTEAM JIU-JITSU<\/p><p><strong>INSTAGRAM:<\/strong> @SEANLAYFIELSJJ<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "6c876d33-18a2-40a1-be6d-66a67beecd04": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Pfp-5.png",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> MUSAB RAZA<\/p><p><strong>RANK:<\/strong> PURPLE<\/p><p><strong>SCHOOL:<\/strong> BTEAM JIU-JITSU<\/p><p><strong>INSTAGRAM:<\/strong> @MUFASABJJ<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1d6d1d8a-15f2-43cb-bd27-dfa6a54dbfac": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/48.png",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> TOM ASTARITA<\/p><p><strong>RANK:<\/strong> BROWN<\/p><p><strong>SCHOOL:<\/strong> BTEAM JIU- JITSU<\/p><p><strong>INSTAGRAM:<\/strong> @YOUNGJIMMYHENDRIX<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_QFehPA": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/22_af4f2416-7ee8-4f51-89f5-f359424784ef.png",
+            "image_width": 650,
+            "title": "",
+            "text": "<p><strong>NAME:<\/strong> ANTHONY MOLINA<\/p><p><strong>RANK:<\/strong> BLACK<\/p><p><strong>SCHOOL:<\/strong> BTEAM JIU-JITSU<\/p><p><strong>INSTAGRAM:<\/strong> @ANTSENKAKU<\/p>",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b2065fec-947e-4482-b763-d14fa1c82bf1",
+        "template--16058221330591__dde053ac-f5ca-410c-8b4c-42ad9f3e66a2-1677003990e1d06eaa-0",
+        "0be87fe9-8a7f-40d1-84ae-ec5a0edea4d9",
+        "2eb6d572-f046-4708-ad3f-423bf92388f0",
+        "text_block_bmXCtb",
+        "template--16058221330591__dde053ac-f5ca-410c-8b4c-42ad9f3e66a2-1677003990e1d06eaa-1",
+        "template--16058221330591__dde053ac-f5ca-410c-8b4c-42ad9f3e66a2-1677003990e1d06eaa-2",
+        "3152ec1c-379a-4fe8-aeda-9dbcf6380044",
+        "0ee91502-49af-441f-b518-05d8ef75b044",
+        "b9c3a98b-c983-4ec7-aacc-4e77f17260a4",
+        "6c876d33-18a2-40a1-be6d-66a67beecd04",
+        "1d6d1d8a-15f2-43cb-bd27-dfa6a54dbfac",
+        "text_block_QFehPA"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "left",
+        "divider": false
+      }
+    },
+    "edb2a2f9-391e-41be-94dd-50cba2b9c15f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16058221330591__edb2a2f9-391e-41be-94dd-50cba2b9c15f-16773342850eb4e3a7-0": {
+          "type": "heading",
+          "settings": {
+            "title": "WANT TO JOIN OUR TEAM!"
+          }
+        },
+        "template--16058221330591__edb2a2f9-391e-41be-94dd-50cba2b9c15f-16773342850eb4e3a7-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "48e2834a-1400-4d1e-a70e-b417f7bef7ab": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/pages\/sponsorship-1",
+            "link_text": "Get Sponsored"
+          }
+        }
+      },
+      "block_order": [
+        "template--16058221330591__edb2a2f9-391e-41be-94dd-50cba2b9c15f-16773342850eb4e3a7-0",
+        "template--16058221330591__edb2a2f9-391e-41be-94dd-50cba2b9c15f-16773342850eb4e3a7-1",
+        "48e2834a-1400-4d1e-a70e-b417f7bef7ab"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "blog_posts_dcerWE": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "news",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a5673328-2291-4969-814c-45d80205eff3",
+    "dde053ac-f5ca-410c-8b4c-42ad9f3e66a2",
+    "edb2a2f9-391e-41be-94dd-50cba2b9c15f",
+    "blog_posts_dcerWE"
+  ]
+}

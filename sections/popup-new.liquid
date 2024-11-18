@@ -1,0 +1,69 @@
+<div id="notify-popup" class="popup">
+  <div class="popup-content">
+    <span class="popup-heading">Notify Me</span>
+   
+     <form class="popup-form" method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form">
+       <input type="hidden" name="form_type" value="contact" />
+       <input type="hidden" name="utf8" value="✓" />
+       
+      <div class="fields">
+     <input type="email" id="email" name="contact[email]" placeholder="Enter your email" required>
+        </div>
+     <br>
+     <br>
+     <span class="text-f">
+        <input type="checkbox" name="contact[agree]" value="agree">  I agree to my email being stored and used to send me notifications for all newly launching collections
+        </span>
+          <br>
+          <br>
+      <div class="select">
+      <select name="nogisizes" id="nogisizes">
+          <option value="nogisizes">Nogi Sizes </option>
+          <option value="xs">XS </option>
+          <option value="s">S </option>
+          <option value="m">M </option>
+          <option value="l">L </option>
+          <option value="xl">XL </option>
+          <option value="2xl">2XL </option>
+          <option value="3xl">3XL </option>
+        </select>
+        <select name="gisizes" id="gisize">
+          <option value="gisize">Gi  Sizes </option>
+          <option value="a0">A0 </option>
+          <option value="a1">A1 </option>
+          <option value="a2">A2 </option>
+          <option value="a3">A3 </option>
+          <option value="a4">A4 </option>
+          <option value="a5">A5 </option>
+          <option value="a1l">A1L </option>
+          <option value="a2l">A2L </option>
+          <option value="a3l">A3L </option>
+          <option value="a2h">A2H </option>
+          <option value="a3h">A3H </option>
+          <option value="a4h">A4H </option>
+        </select>
+      <input type="submit" value="submit">
+        </div> 
+   </form>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "popup-new",
+    "settings": [],
+    "presets":[
+      {
+        "name":"popup-new",
+        "category":"custom"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

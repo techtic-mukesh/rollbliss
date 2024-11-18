@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": false
+      }
+    },
+    "390d493e-2227-4355-bc53-579371d6f0ca": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Nov17202310-32PM34.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "{{ collection.title }}",
+        "text": "<p>Welcome to RollBliss, where luxury meets functionality for the ultimate grappling experience. Our premium-quality custom BJJ Gis, rashguards, and shorts are designed with the utmost attention to detail, ensuring you not only look good but also feel good on the mat.<\/p>",
+        "button_label": "View Products",
+        "button_link": "#CollectionAjaxContent",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 3,
+            "rows_per_page": 12,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": false,
+        "collapsed": false,
+        "filter_style": "sidebar",
+        "enable_color_swatches": true,
+        "enable_sort": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "390d493e-2227-4355-bc53-579371d6f0ca",
+    "main-collection"
+  ]
+}

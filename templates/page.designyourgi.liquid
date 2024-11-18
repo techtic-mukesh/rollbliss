@@ -1,0 +1,120 @@
+{{ 'application.css' | asset_url | stylesheet_tag }}
+{% render 'hs-defer-css' with filename: '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', pages: 'collection,index,product' | split: ',', minify: false, local: false %}
+  {% render 'hs-defer-css' with filename: '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', pages: 'collection,index,product' | split: ',', minify: false, local: false %}
+
+<div class="two-column-form">
+    <div class="container">
+        <div class="left-col">
+            <h2>Design <br /> Your GI</h2>
+        </div>
+        <div class="right-col">
+            <h3>Order Inquiry</h3>
+            {% form 'contact' %}
+                {{ form.errors | default_errors }}  
+              {%- if form.posted_successfully? -%}
+    <span style="color:green;display: flex;justify-content: center">Thanks for contacting us. we'll get back to you as soon as possible.</span>
+  {%- endif -%}
+              <br>
+                    <div class="row first-name">                        
+                        <input type="text" name="contact[full_name]" id="full-name" placeholder="Full Name" />
+                    </div>
+                    <div class="row email">                        
+                        <input type="email" name="contact[email]" id="email" placeholder="Email" />
+                    </div>
+                    <div class="row phone">                        
+                        <input type="tel" name="contact[phone]" id="phone" placeholder="Phone" />
+                    </div>
+                    <div class="row">
+                        <label>I am interested in*</label>
+                        <div class="d-flex align-items-center">
+                            <span class="item">
+                                <input type="radio" name="contact[I am interested in]" value="Custom Individual Order"> Custom Individual Order
+                            </span>
+                            <span class="item">
+                                <input type="radio" name="contact[I am interested in]" value="Academy Wholesale Order (Custom)"> Academy Wholesale Order (Custom)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>I am interested in a custom gi for myself?</label>
+                        <div class="d-flex align-items-center">
+                            <span class="item">
+                                <input type="radio" name="contact[I am interested in a custom gi for myself?]" value="Yes"> Yes
+                            </span>
+                            <span class="item">
+                                <input type="radio" name="contact[I am interested in a custom gi for myself?]" value="No"> No
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>I am interested in a custom nogi gear for myself?</label>
+                        <div class="d-flex align-items-center">
+                            <span class="item">
+                                <input type="radio" name="contact[I am interested in a custom nogi gear for myself?]" value="Yes"> Yes
+                            </span>
+                            <span class="item">
+                                <input type="radio" name="contact[I am interested in a custom nogi gear for myself?]" value="No"> No
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>I am interested in custom gis for my academy?</label>
+                        <div class="d-flex align-items-center">
+                            <span class="item">
+                                <input type="radio" name="contact[I am interested in custom gis for my academy?]" value="Yes"> Yes
+                            </span>
+                            <span class="item">
+                                <input type="radio" name="contact[I am interested in custom gis for my academy?]" value="No"> No
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>I am interested in custom nogi gear for my academy?</label>
+                        <div class="d-flex align-items-center">
+                            <span class="item">
+                                <input type="radio" name="contact[I am interested in custom nogi gear for my academy?]" value="Yes"> Yes
+                            </span>
+                            <span class="item">
+                                <input type="radio" name="contact[I am interested in custom nogi gear for my academy?]" value="No"> No
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label>What is the estimated quantity you will need of each item? *</label>
+                        <input type="number" name="contact[What is the estimated quantity you will need of each item?]" id="ContactFormQuantity" />
+                    </div>
+                    <div class="row">
+                        <label>Is there a deadline for when you will need it to be delivered by? *</label>
+                        <div class="d-flex align-items-center">
+                            <span class="item">
+                                <input type="radio" name="contact[Is there a deadline for when you will need it to be delivered by?]" value="Yes"> Yes
+                            </span>
+                            <span class="item">
+                                <input type="radio" name="contact[Is there a deadline for when you will need it to be delivered by?]" value="No"> No
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row hear-about-us">
+                        <label>How did you hear about us</label>
+                        <select id="hear-about-us" name="contact[How did you hear about us]">
+                            <option>Website</option>
+                            <option>Word of Mouth</option>
+                            <option>Facebook</option>
+                            <option>Instagram</option>
+                            <option>Google Ad</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <textarea name="contact[Message]" id="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Design Your GI Now" />
+                    </div>
+           <span>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply</span>
+            {% endform %}
+        </div>
+    </div>
+</div>
+
+{{ 'application.css' | asset_url | stylesheet_tag }}

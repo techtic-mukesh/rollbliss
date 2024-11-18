@@ -1,0 +1,23 @@
+{
+  "parent": "page.resort-collection.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "39152d2f-f865-4dcc-9e91-a0f45bf4ba7f": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "a5673328-2291-4969-814c-45d80205eff3": {
+      "settings": {},
+      "blocks": {
+        "template--16057945587871__a5673328-2291-4969-814c-45d80205eff3-16769730796e85c9e3-0": {
+          "settings": {
+            "top_subheading": "ROLLBLISS"
+          }
+        }
+      }
+    }
+  }
+}

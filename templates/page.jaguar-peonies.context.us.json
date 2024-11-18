@@ -1,0 +1,18 @@
+{
+  "parent": "page.jaguar-peonies.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "a5673328-2291-4969-814c-45d80205eff3": {
+      "settings": {},
+      "blocks": {
+        "template--16057945587871__a5673328-2291-4969-814c-45d80205eff3-16769730796e85c9e3-0": {
+          "settings": {
+            "image_mobile": "shopify:\/\/shop_images\/banner-11.png"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "sections": {
+    "9bf0b823-c686-47db-8df0-18c61579de5e": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--16057848529055__9bf0b823-c686-47db-8df0-18c61579de5e-1677327639bed9217e-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Endless\npossibilities.",
+            "title_size": 80,
+            "subheading": "Bring your brand to life",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--16057848529055__9bf0b823-c686-47db-8df0-18c61579de5e-1677327639bed9217e-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16057848529055__9bf0b823-c686-47db-8df0-18c61579de5e-1677327639bed9217e-0",
+        "template--16057848529055__9bf0b823-c686-47db-8df0-18c61579de5e-1677327639bed9217e-1"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "0b4f49db-fc00-46d1-8f31-00d757a120a6": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "{{ shop.brand.cover_image }}",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "f3d1e84e-d856-4277-8038-97bd8ffe80c5": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--16057848529055__f3d1e84e-d856-4277-8038-97bd8ffe80c5-1677540609c529ff6a-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Endless\npossibilities.",
+            "title_size": 80,
+            "subheading": "Bring your brand to life",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--16057848529055__f3d1e84e-d856-4277-8038-97bd8ffe80c5-1677540609c529ff6a-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16057848529055__f3d1e84e-d856-4277-8038-97bd8ffe80c5-1677540609c529ff6a-0",
+        "template--16057848529055__f3d1e84e-d856-4277-8038-97bd8ffe80c5-1677540609c529ff6a-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "main": {
+      "type": "article-template",
+      "settings": {
+        "image_hero": false,
+        "blog_show_tags": true,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "social_sharing_blog": true
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "You may also like",
+        "blog": "news",
+        "post_limit": 6,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "square",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "9bf0b823-c686-47db-8df0-18c61579de5e",
+    "0b4f49db-fc00-46d1-8f31-00d757a120a6",
+    "f3d1e84e-d856-4277-8038-97bd8ffe80c5",
+    "main",
+    "blog-posts"
+  ]
+}

@@ -1,0 +1,135 @@
+{% comment %}
+Snippet Arguments
+- collection: Liquid 'collection' or 'search' object
+- items: Paginated 'collection.products' or 'search.results' list. Cannot be pulled from the the 'collection' object passed in above
+- enable_sidebar: boolean
+- filter_style: 'sidebar' or 'drawer'
+- enable_sort: boolean
+- enable_collection_count
+- per_row
+- mobile_flush_grid
+- quick_shop_enable
+{% endcomment %}
+
+{% liquid
+  if collection.products
+    assign count = collection.products_count
+    assign count_label = 'collections.general.items_with_count'
+  endif
+
+  if collection.results
+    assign count = collection.results_count
+    assign count_label = 'general.search.result_count'
+  endif
+
+  assign filters = collection.filters
+  assign sort_by = collection.sort_by
+  assign default_sort_by = collection.default_sort_by
+  assign sort_options = collection.sort_options
+  assign current_filter_size = 0
+
+  for filter in filters
+    assign current_filter_size = current_filter_size | plus: filter.active_values.size
+  endfor
+%}
+
+<div class="collection-grid__wrapper">
+  <div class="collection-filter">
+    <div class="collection-filter__item collection-filter__item--drawer">
+      <button
+        type="button"
+        class="js-drawer-open-collection-filters btn btn--tertiary{% unless current_filter_size == 0 %} btn--tertiary-active{% endunless %}"
+        aria-controls="FilterDrawer">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-filter" viewBox="0 0 64 64"><path d="M48 42h10M48 42a5 5 0 1 1-5-5 5 5 0 0 1 5 5zM7 42h31M16 22H6M16 22a5 5 0 1 1 5 5 5 5 0 0 1-5-5zM57 22H26"/></svg>
+          {{ 'collections.filters.title_tags' | t }}
+          {%- if current_filter_size > 0 -%}
+              ({{ current_filter_size }})
+          {%- endif -%}
+      </button>
+    </div>
+
+    <div class="collection-filter__item collection-filter__item--count small--hide">
+      {%- if enable_collection_count -%}
+        All products
+        ({{ count_label | t: count: count | remove: 'products' | strip }})
+      {%- endif -%}
+    </div>
+                
+    <div class="collection-filter__item collection-filter__item--sort d-flex align-items-center">
+          <a hrf="" class="d-md-flex show-hide-filters hide-filters d-none"><span>Hide Filters</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style="margin-left: 5px;">
+          <path d="M21.25 9.18H8.895M4.534 9.18H2.75M4.534 9.18C4.534 8.60183 4.76368 8.04734 5.17251 7.63851C5.58134 7.22968 6.13583 7 6.714 7C7.29217 7 7.84666 7.22968 8.25549 7.63851C8.66432 8.04734 8.894 8.60183 8.894 9.18C8.894 9.75817 8.66432 10.3127 8.25549 10.7215C7.84666 11.1303 7.29217 11.36 6.714 11.36C6.13583 11.36 5.58134 11.1303 5.17251 10.7215C4.76368 10.3127 4.534 9.75817 4.534 9.18ZM21.25 15.787H15.502M15.502 15.787C15.502 16.3653 15.2718 16.9204 14.8628 17.3293C14.4539 17.7383 13.8993 17.968 13.321 17.968C12.7428 17.968 12.1883 17.7373 11.7795 17.3285C11.3707 16.9197 11.141 16.3652 11.141 15.787M15.502 15.787C15.502 15.2087 15.2718 14.6546 14.8628 14.2457C14.4539 13.8367 13.8993 13.607 13.321 13.607C12.7428 13.607 12.1883 13.8367 11.7795 14.2455C11.3707 14.6543 11.141 15.2088 11.141 15.787M11.141 15.787H2.75" stroke="#333333" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"></path>
+        </svg></a>
+        <div class="collection-filter__sort-container d-flex align-items-center">
+        {%- assign sort_by = sort_by | default: default_sort_by -%}
+        <label for="SortBy" class="hidden-label- sort-by">Sort by:</label>
+        <select name="SortBy" id="SortBy" data-default-sortby="{{ default_sort_by }}">
+          <option value="title-ascending"{% if sort_by == default_sort_by %} selected="selected"{% endif %}>{{ 'collections.sorting.title' | t }}</option>
+          {%- for option in sort_options -%}
+          <option value="{{ option.value }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name }}</option>
+          {%- endfor -%}
+        </select>
+        </div>
+    </div>
+  </div>
+
+  <div class="grid grid--uniform{% if mobile_flush_grid %} small--grid--flush{% endif %}"{% unless enable_collection_count %} data-scroll-to{% endunless %}>
+    {%- for item in items -%}
+      {%- if item.object_type == 'product' -%}
+        {%- render 'product-grid-item',
+          product: item,
+          per_row: per_row,
+          quick_shop_enable: quick_shop_enable
+        -%}
+      {%- else -%}
+        {%- render 'search-grid-item',
+          item: item,
+          per_row: per_row
+        %}
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{%- if enable_sidebar and filter_style != 'drawer' and collection.filters.size > 0 -%}
+{% comment %}
+  Sidebar enabled but not in drawer mode, only show filter button on mobile
+{% endcomment %}
+{% style %}
+@media screen and (min-width: 769px) {
+  .collection-filter__item--drawer {
+    display: none;
+  }
+  .collection-filter__item--count {
+    text-align: left;
+  }
+  html[dir="rtl"] .collection-filter__item--count {
+    text-align: right;
+  }
+}
+{% endstyle %}
+{%- endif -%}
+
+{%- if enable_sidebar == false or collection.filters.size == 0 -%}
+{% comment %}
+    Disable sidebar & filter features
+{% endcomment %}
+{% style %}
+.collection-filter__item--drawer {
+  display: none;
+}
+.collection-filter__item--count {
+  text-align: left;
+}
+html[dir="rtl"] .collection-filter__item--count {
+  text-align: right;
+}
+{% endstyle %}
+{%- endif -%}
+
+{%- unless enable_sort -%}
+{% style %}
+.collection-filter__sort-container {
+  display: none;
+}
+{% endstyle %}
+{%- endunless -%}

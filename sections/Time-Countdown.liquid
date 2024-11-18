@@ -1,0 +1,167 @@
+<div id="main-container">
+  <div class="all-content">
+<div class="main-text">
+  <h2>{{ section.settings.hd }}</h2>
+  <p>{{ section.settings.des }}</p>
+</div>
+<div class="time-countdown">
+  <div id="countdown-timer">
+    <span id="days"></span>
+    <span class="label">Days</span>
+  </div>
+  <div id="countdown-timer">
+    <span id="hours"></span>
+    <span class="label">Hours</span>
+  </div>
+  <div id="countdown-timer">
+    <span id="minutes"></span>
+    <span class="label">Minutes</span>
+  </div>
+  <div id="countdown-timer">
+    <span id="seconds"></span>
+    <span class="label">Seconds</span>
+  </div>
+</div>
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("{{ section.settings.end }}").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="countdown-timer"
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown-timer").innerHTML = "";
+  }
+}, 1000);
+
+</script>
+
+
+{% schema %}
+  {
+    "name": "Time-Countdown",
+    "settings": [
+      {
+        "type":"text",
+        "label":"End Date-Time Like Default Format",
+        "id":"end",
+        "default":"april 1, 2023 00:00:00"
+      },
+       {
+        "type":"text",
+        "label":"Countdown Heading",
+        "id":"hd",
+        "default":"FLASH SALE"
+      },
+      {
+        "type":"text",
+        "label":"Countdown Description",
+        "id":"des",
+        "default":"get 20% off if you spend 120$ or more!"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Time-Countdown",
+        "category":"custom"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+#main-container{
+    background-color:#eef0f4;
+    
+}
+  .all-content{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding: 4rem 0rem;
+    max-width:1050px;
+    margin: 0 auto;
+  }
+  .main-text h2{
+      text-transform: uppercase;
+  }
+  .time-countdown {
+  text-align: center;
+  font-size: 18px;
+}
+
+#countdown-timer {
+  display: inline-block;
+  font-size: 26px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-right: 1px solid black;
+}
+
+#countdown-timer span {
+  display: block;
+  font-size: 28px;
+  padding-right: 24px;
+}
+
+#countdown-timer span.label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  font-weight:300;
+}
+@media only screen and (max-width:990px){
+  .all-content{
+    
+    max-width:850px;
+  }
+}
+  @media only screen and (max-width:850px){
+  .all-content{
+    
+   text-align:center;
+    justify-content:center;
+    gap: 1rem;
+  }
+}
+   @media only screen and (max-width:450px){
+  .all-content{
+    
+   text-align:center;
+    justify-content:center;
+  }
+     #countdown-timer {
+       font-size:22px;
+     }
+     #countdown-timer span{
+       padding-right:12px;
+     }
+}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

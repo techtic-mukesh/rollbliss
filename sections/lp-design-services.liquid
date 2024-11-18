@@ -1,0 +1,32 @@
+{% render 'hs-defer-css' with filename: 'application.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{% render 'hs-defer-css' with filename: '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', pages: 'collection,index,product' | split: ',', minify: false, local: false %}
+  {% render 'hs-defer-css' with filename: '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', pages: 'collection,index,product' | split: ',', minify: false, local: false %}
+
+<div class="design-services pb-0">
+    <h2>Design Services</h2>
+    <p>Don't have a design? No worries! Our design team can help you bring your ideas to life!</p>
+    <div class="container">
+        <div class="design-services-init">
+            <div class="slide">
+                <a href="#">
+                    <img alt=" " class="lazyload hs-lazyload hs-id-3f94fe74" data-src="https://cdn.shopify.com/s/files/1/2115/4401/t/12/assets/teamryano_tZo7.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img alt=" " class="lazyload hs-lazyload hs-id-c54d93b4" data-src="https://cdn.shopify.com/s/files/1/2115/4401/t/12/assets/masterchadskungfu_3dgN.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img alt=" " class="lazyload hs-lazyload hs-id-a857c7bd" data-src="https://cdn.shopify.com/s/files/1/2115/4401/t/12/assets/osojiujitsuberserkerdesign_joft.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                </a>
+            </div>
+            <div class="slide">
+                <a href="#">
+                    <img alt=" " class="lazyload hs-lazyload hs-id-ad054bcf" data-src="https://cdn.shopify.com/s/files/1/2115/4401/t/12/assets/wcmadesign_FD14.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

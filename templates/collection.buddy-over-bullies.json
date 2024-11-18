@@ -1,0 +1,211 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 3,
+            "rows_per_page": 12,
+            "mobile_flush_grid": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sidebar": false,
+        "collapsed": false,
+        "filter_style": "sidebar",
+        "enable_color_swatches": true,
+        "enable_sort": true
+      }
+    },
+    "rich_text_HjLGxY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iEyUgF": {
+          "type": "heading",
+          "settings": {
+            "title": "Empowerment Through Jiu-Jitsu"
+          }
+        },
+        "text_6WgeP7": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>At RollBliss, we are honored to support Tom DeBlass and his non-profit organization, Buddies Over Bullies, in their mission to combat childhood bullying. We believe every child deserves to feel safe and empowered, both in school and online. With your help, we can make a meaningful impact in the lives of children across the country.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iEyUgF",
+        "text_6WgeP7"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "390d493e-2227-4355-bc53-579371d6f0ca": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Nov17202310-32PM34.jpg",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "Our Commitment",
+        "text": "<p><strong>50% of All Profits Support Buddies Over Bullies<\/strong><\/p><p>When you choose to purchase a Buddy Over Bullies No Gi Kit from RollBliss, you’re investing in more than just premium apparel. You’re contributing directly to the important work of Buddies Over Bullies. Half of all profits from these exclusive kits will be directed to the organization, providing essential resources to help their dedicated volunteers implement effective anti-bullying solutions.<\/p>",
+        "button_label": "View Products",
+        "button_link": "#CollectionAjaxContent",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "background_image_text_TAm7j3": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "Join Us in Making a Difference",
+        "text": "<p>By buying a Buddy Over Bullies No Gi Kit, you’re joining a community committed to empowering our youth. Your support ensures that no child has to face bullying alone, helping them build confidence and resilience through the practice of jiu-jitsu.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/banner-5-1_1.webp",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 550,
+        "framed": false,
+        "parallax": true
+      }
+    },
+    "rich_text_PWYWzA": {
+      "type": "rich-text",
+      "blocks": {
+        "text_NQBWCe": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>Tom DeBlass Leads the Charge<\/strong><\/p><p>Tom DeBlass, a distinguished figure in the jiu-jitsu community, is leading the effort against childhood bullying through Buddies Over Bullies. His dedication and passion inspire us to contribute to this cause, creating a safer and more supportive environment for children everywhere.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_NQBWCe"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "slideshow_t3CkhF": {
+      "type": "slideshow",
+      "blocks": {
+        "image_A7EVzQ": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "image_7tbAKG": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Let’s roll out change together.",
+            "title_size": 80,
+            "subheading": "Together, We Can End Childhood Bullying",
+            "link": "",
+            "link_text": "Shop Now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/WEB214A8941.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "image_bEej9a": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And optional subtext",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_A7EVzQ",
+        "image_7tbAKG",
+        "image_bEej9a"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "main-collection",
+    "rich_text_HjLGxY",
+    "390d493e-2227-4355-bc53-579371d6f0ca",
+    "background_image_text_TAm7j3",
+    "rich_text_PWYWzA",
+    "slideshow_t3CkhF"
+  ]
+}

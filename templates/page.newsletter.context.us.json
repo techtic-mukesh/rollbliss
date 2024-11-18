@@ -1,0 +1,7 @@
+{
+  "parent": "page.newsletter.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {}
+}

@@ -1,0 +1,183 @@
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+<div class="index-section faq-sec">
+  
+<div class="page-width page-width--narrow">
+
+  {%- if section.settings.title != blank -%}
+    <header class="section-header">
+      <h2 class="section-header__title">
+        {{ section.settings.title | escape }}
+      </h2>
+    </header>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'question' %}
+                {
+                  "@type": "Question",
+                  "name": {{ block.settings.title | json }},
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": {{ block.settings.text | json }}
+                  }
+                }{% unless forloop.last %},{% endunless %}
+            {% endcase %}
+          {% endfor %}
+        ]
+      }
+    </script>
+
+    {%- for block in section.blocks -%}
+      <div class="que-ans" {% if forloop.index > 6 %}style="display: none;"{% endif %} {{ block.shopify_attributes }}>
+        {% case block.type %}
+          {% when 'rich-text'%}
+            <div class="index-section index-section--faq">
+              <div class="text-{{ block.settings.align_text }}">
+                {%- if block.settings.title != blank -%}
+                  <p class="h2">
+                    {{ block.settings.title | escape }}
+                  </p>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="rte">
+                    {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
+                      {{ block.settings.text }}
+                    {%- if block.settings.enlarge_text %}</div>{% endif -%}
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+
+          {% when 'question'%}
+            <div>
+              <button type="button" class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left" aria-controls="FAQ-content-{{ block.id }}">
+                {% unless template contains 'product' %}
+                  {%- render 'collapsible-icons-alt', no_circle: true -%}
+                {% endunless %}
+                <span>{{ block.settings.title }}</span>
+                {% if template contains 'product' %}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="acc-plus">
+                  <path d="M20 10C20 10.1693 19.9328 10.3316 19.813 10.4513C19.6933 10.571 19.531 10.6383 19.3617 10.6383H10.6383V19.3617C10.6383 19.531 10.571 19.6933 10.4513 19.813C10.3316 19.9328 10.1693 20 10 20C9.83071 20 9.66836 19.9328 9.54866 19.813C9.42895 19.6933 9.3617 19.531 9.3617 19.3617V10.6383H0.638298C0.469011 10.6383 0.306657 10.571 0.186953 10.4513C0.067249 10.3316 0 10.1693 0 10C0 9.83071 0.067249 9.66836 0.186953 9.54866C0.306657 9.42895 0.469011 9.3617 0.638298 9.3617H9.3617V0.638298C9.3617 0.469011 9.42895 0.306657 9.54866 0.186953C9.66836 0.067249 9.83071 0 10 0C10.1693 0 10.3316 0.067249 10.4513 0.186953C10.571 0.306657 10.6383 0.469011 10.6383 0.638298V9.3617H19.3617C19.531 9.3617 19.6933 9.42895 19.813 9.54866C19.9328 9.66836 20 9.83071 20 10Z" fill="black"></path>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="acc-minus">
+                  <path d="M20 9.99999C20 10.1693 19.9328 10.3316 19.813 10.4513C19.6933 10.571 19.531 10.6383 19.3617 10.6383C7.61068 10.6383 12.8347 10.6383 0.638298 10.6383C0.469011 10.6383 0.306657 10.571 0.186953 10.4513C0.067249 10.3316 0 10.1693 0 9.99999C0 9.83071 0.067249 9.66835 0.186953 9.54865C0.306657 9.42894 0.469011 9.36169 0.638298 9.36169C12.9187 9.36169 6.55593 9.36169 19.3617 9.36169C19.531 9.36169 19.6933 9.42894 19.813 9.54865C19.9328 9.66835 20 9.83071 20 9.99999Z" fill="black"/>
+                  </svg>
+                {% endif %}
+              </button>
+              <div id="FAQ-content-{{ block.id }}" class="collapsible-content collapsible-content--all">
+                <div class="collapsible-content__inner collapsible-content__inner--faq rte">
+                  {{ block.settings.text }}
+                </div>
+              </div>
+            </div>
+        {% endcase %}
+      </div>
+    {%- endfor -%}
+
+    {% if section.blocks.size > 6 %}
+      <a href="javascript:void(0);" class="show-more more-less">Show more</a>
+      <a href="javascript:void(0);" class="show-less more-less" style="display: none;">Show less</a>
+    {% endif %} 
+  {%- endif -%}
+
+  {%- if section.blocks.size == 0 -%}
+    <div class="placeholder-noblocks">
+      {{ 'home_page.onboarding.no_content' | t }}
+    </div>
+  {%- endif -%}
+</div>
+</div>
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.faq.name",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.faq.settings.title.label",
+      "default": "FAQs"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "rich-text",
+      "name": "t:sections.faq.blocks.rich_text.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.faq.blocks.rich_text.settings.title.label",
+          "default": "Rich text"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.faq.blocks.rich_text.settings.text.label",
+          "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>"
+        },
+        {
+          "type": "select",
+          "id": "align_text",
+          "label": "t:sections.faq.blocks.rich_text.settings.align_text.label",
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.left.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.center.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.faq.blocks.rich_text.settings.align_text.options.right.label"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "t:sections.faq.blocks.question.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.faq.blocks.question.settings.title.label",
+          "default": "Frequently asked question"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.faq.blocks.question.settings.text.label",
+          "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.faq.presets.faq.name",
+      "blocks": [
+        {
+          "type": "question"
+        },
+        {
+          "type": "question"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

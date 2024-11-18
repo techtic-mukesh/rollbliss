@@ -1,0 +1,29 @@
+{% capture description %}
+  {%- if product.empty? -%}
+    {{ 'home_page.onboarding.product_description' | t }}
+  {%- else -%}
+    <!-- {{ product.description }} -->
+
+    {% assign first_paragraph = product.description | split: "<p>" | last | split: "</p>" | first %}
+    {% assign paragraphs = product.description | split: "</p>" %}
+
+    {% if first_paragraph == blank %}
+      {% assign second_paragraph = paragraphs[1] | strip_html %}
+      {{ second_paragraph }}
+    {% else  %}
+      {{ first_paragraph }}
+    {% endif %}
+    
+        
+  {%- endif -%}
+{% endcapture %}
+{%- if is_tab -%}
+  {% assign title = 'products.product.description' | t %}
+  {% if product.metafields.custom.product_description %}
+  {%- render 'tab', id: id, title: title, content: product.metafields.custom.product_description -%}
+  {% endif %}
+{%- else -%}
+  <div class="rte">
+    {{ description }}
+  </div>
+{%- endif -%}

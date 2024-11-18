@@ -1,0 +1,12 @@
+{% assign collectionProductIDS = '292492509343' %}
+{% capture collectionProductIDSArray %}
+{% for collection in collections %}
+	{%- if collectionProductIDS contains collection.id -%}
+      {% for product in collection.products %}
+      '{{ collection.id }}_{{forloop.index}}': '{{ product.id }}',
+      {% endfor %}
+    {% endif %}
+{% endfor %}
+{% endcapture %}
+
+{{collectionProductIDSArray}}

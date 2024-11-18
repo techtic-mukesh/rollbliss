@@ -1,0 +1,134 @@
+{% render 'hs-defer-css' with filename: 'application.css', pages: 'collection,index,product' | split: ',', minify: true, local: true %}
+{% render 'hs-defer-css' with filename: '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', pages: 'collection,index,product' | split: ',', minify: false, local: false %}
+
+
+<div  class="two-column-form" >
+    <div class="container">
+        
+        <div >
+            
+            {% form 'contact' %}
+                {{ form.errors | default_errors }}    
+                {%- if form.posted_successfully? -%}
+    <span style="color:green;display: flex;justify-content: center">Thanks for contacting us. we'll get back to you as soon as possible.</span>
+  {%- endif -%}
+<br>
+                    <div class="row first-name">                        
+                        <input type="text" name="contact[full_name]" id="full-name" placeholder="Full Name" />
+                    </div>
+                    <div class="row email">                        
+                        <input type="email" name="contact[email]" id="email" placeholder="Email" />
+                    </div>
+                    <div class="row phone">                        
+                        <input type="tel" name="contact[phone]" id="phone" placeholder="Phone" />
+                    </div>
+                    <div class="row dateofbirth">
+                        <label>Birth Date</label>
+                        <input type="date" name="contact[Date of Birth]" id="dateofbirth" />
+                    </div>
+                    <div class="row">
+                        <label>School you train At/ Affiliation?</label>
+                        <input type="text" name="contact[School you train At/ Affiliation?]" />
+                    </div>
+                    <div class="row">
+                        <label>Years Training</label>
+                        <input type="text" name="contact[Years Training]" />
+                    </div>
+                    <div class="row">
+                        <label>Belt Rank</label>
+                        <input type="text" name="contact[Belt Rank]" />
+                    </div>
+                    <div class="row">
+                        <label>Gi Size</label>
+                        <input type="text" name="contact[Gi Size]" />
+                    </div>
+                    <div class="row">
+                        <label>NoGi Size</label>
+                        <input type="text" name="contact[NoGi Size]" />
+                    </div>
+        
+
+                   <div class="row">
+                        <label>Check All Social media platforms you currently have used?</label>
+                        <div class="d-flex align-items-center">
+                            <span class="item">
+                                <input type="checkbox" name="contact[social]" value="Facebook"> Facebook
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[social]" value="Instagram"> Instagram
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[social]" value="TikTok"> TikTok
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[social]" value="YouTube"> YouTube
+                            </span>
+                            <span class="item">
+                                <input type="checkbox" name="contact[social]" value="Twitter"> Twitter
+                            </span>
+                        </div>
+                    </div>
+
+          
+                    <div class="row">
+                        <label>Describe your current goals in jiu-jitsu?</label>
+                        <input type="text" name="contact[Describe your current goals in jiu-jitsu?]" />
+                    </div>
+                    <div class="row">
+                        <label>What are your goals out side of jiu-jitsu?</label>
+                        <input type="text" name="contact[What are your goals out side of jiu-jitsu?]" />
+                    </div>
+                    <div class="row">
+                        <label>Why do you want to represent RollBliss?</label>
+                        <input type="text" name="contact[Why do you want to represent RollBliss?]" />
+                    </div>
+                    <div class="row">
+                        <label>What do you think makes our brand different?</label>
+                        <input type="text" name="contact[What do you think made our brand different?]" />
+                    </div>
+                    <div class="row">
+                        <label>How can you help promote our brand?</label>
+                        <input type="text" name="contact[How can you help promote our brand?]" />
+                    </div>
+                    <div class="row">
+                        <label>If you have 3 wishes what would they be?</label>
+                        <textarea name="contact[If you have 3 wishes what would they be?]" id="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="row">
+                        <label>
+                            <strong>Accomplishment:</strong> <br /> 3 Recent Events you competed in and where you placed at?
+                        </label>
+                        <textarea name="contact[3 Recent Events you competed in and where you placed at?]" id="message2" placeholder="Message"></textarea>
+                    </div>
+                    <div class="row">
+                        <label>Please Provide your Social Media Links ?:</label>
+                        <textarea name="contact[Please Provide your Social Media Links?]" id="message3" placeholder="Message"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="SEND" />
+                    </div>
+          <br>
+      <span>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply</span>
+            {% endform %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "sponsorship",
+    "settings": [],
+    "presets":[
+      {
+        "name":"sponsorship",
+        "category":"custom"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
